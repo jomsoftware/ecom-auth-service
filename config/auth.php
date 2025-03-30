@@ -40,6 +40,12 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+
+        'api' => [
+            'driver' => 'passport',
+            'provider' => 'users',
+        ],
+
     ],
 
     /*
@@ -112,4 +118,7 @@ return [
 
     'password_timeout' => env('AUTH_PASSWORD_TIMEOUT', 10800),
 
+    'password_client_id' => env('PASSWORD_CLIENT_ID'),
+    'password_client_secret' => env('PASSWORD_CLIENT_SECRET'),
+    
 ];
